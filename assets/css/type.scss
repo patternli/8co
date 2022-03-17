@@ -1,23 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Hubballi&display=swap');
 
-body {
+$title-font: 'Hubballi', cursive;
+$body-font: 'Gothic A1', sans-serif;
+
+.type-titles {
+    font-family: 'Hubballi', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.type-body {
     font-family: 'Gothic A1', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.type-accent {
+    color: $accent-color;
+}
+
+
+body {
+    @extend .type-body;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
 }
 
 h1 {
-    font-family: 'Hubballi', cursive;
+    @extend .type-titles;
     font-size: 3rem;
-    margin: 0;
-    padding: 0;
+    line-height: 3.2rem;
     @media (min-width: $tablet) {
         font-size: 3.5rem;
+        line-height: 3.8rem;
     }
     @media (min-width: $laptop) {
         font-size: 4rem;
+        line-height: 4.2rem;
     }
 }
 
-.h1-accent {
-    @extend h1;
-    color: $accent-color;
+h2 {
+    @extend .type-titles;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    @media (min-width: $tablet) {
+        font-size: 2.75rem;
+        line-height: 2.85rem;
+    }
+    @media (min-width: $laptop) {
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+}
+
+h3 {
+    @extend .type-titles;
+    font-size: 1.75rem;
+    line-height: 1.85rem;
+    @media (min-width: $tablet) {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    @media (min-width: $laptop) {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+}
+
+h4 {
+    @extend .type-body;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 900
+}
+
+h5 {
+    @extend .type-body;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 900;
+}
+
+h6 {
+    @extend .type-body;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+a {
+    color: $accent-color-alt;
+    text-decoration-style: dashed;
+    text-underline-offset: 4px;
+    &:hover {
+        color: $secondary-color-60;
+    }
+    &:active {
+        color: $primary-color-20;
+    }
+    &:visited {
+        color: $primary-color;
+    }
+}
+
+.btn {
+    text-decoration: none;
+    @extend .type-body;
+    font-size: 1.2rem;
+    color: $ink-color;
+    background-color: $accent-color-alt;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color .5s, color .5s;
+    &:hover {
+        color: $ink-color-60;
+        background-color: $accent-color-80;
+        padding: 10;
+    }
+    i {
+        font-size: larger;
+    }
 }
