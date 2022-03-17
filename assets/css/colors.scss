@@ -1,0 +1,41 @@
+$paper-color: #fffff;
+$ink-color: #000000;
+$primary-color: #22223B;
+$primary-color-alt: #4A4E69;
+$secondary-color: #9A8C98;
+$accent-color: #FBB13C;
+$accent-color-alt: #73D2DE;
+
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+$ink-color-80: tint($ink-color, 80%);
+$ink-color-60: tint($ink-color, 60%);
+$ink-color-40: tint($ink-color, 40%);
+$ink-color-20: tint($ink-color, 20%);
+
+$primary-color-80: tint($primary-color, 80%);
+$primary-color-60: tint($primary-color, 60%);
+$primary-color-40: tint($primary-color, 40%);
+$primary-color-20: tint($primary-color, 20%);
+
+$primary-color-alt-80: tint($primary-color-alt, 80%);
+$primary-color-alt-60: tint($primary-color-alt, 60%);
+$primary-color-alt-40: tint($primary-color-alt, 40%);
+$primary-color-alt-20: tint($primary-color-alt, 20%);
+
+$secondary-color-80: tint($secondary-color, 80%);
+$secondary-color-60: tint($secondary-color, 60%);
+$secondary-color-40: tint($secondary-color, 40%);
+$secondary-color-20: tint($secondary-color, 20%);
+
+$accent-color-80: tint($accent-color, 80%);
+$accent-color-60: tint($accent-color, 60%);
+$accent-color-40: tint($accent-color, 40%);
+$accent-color-20: tint($accent-color, 20%);
+
+$accent-color-alt-80: tint($accent-color-alt, 80%);
+$accent-color-alt-60: tint($accent-color-alt, 60%);
+$accent-color-alt-40: tint($accent-color-alt, 40%);
+$accent-color-alt-20: tint($accent-color-alt, 20%);
