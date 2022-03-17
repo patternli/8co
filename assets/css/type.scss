@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Hubballi&display=swap');
+
+body {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+h1 {
+    font-family: 'Hubballi', cursive;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    @media (min-width: $tablet) {
+        font-size: 3.5rem;
+    }
+    @media (min-width: $laptop) {
+        font-size: 4rem;
+    }
+}
+
+.h1-accent {
+    @extend h1;
+    color: $accent-color;
+}

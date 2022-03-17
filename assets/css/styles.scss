@@ -1,0 +1,17 @@
+---
+---
+
+{% include_relative colors.scss %}
+{% include_relative grid.scss %}
+{% include_relative type.scss %}
+{% include patterns/patterns.scss %}
+
+/** move these to browser reset **/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
